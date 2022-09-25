@@ -7,7 +7,13 @@ const Hero = () => {
 
   return (
     <div className='hero-section'>
-      <ImageCarousel />
+      <div className='container'>
+        <ImageCarousel />
+        <div className='title'>
+          <h1>officesum</h1>
+          <h2>A placeholder text generator of quotes from Dunder Mifflins finest</h2>
+        </div>
+      </div>
     </div>
   );
 }

@@ -25,8 +25,10 @@ const ImageCarousel = () => {
   }, [theme]);
 
   return (
-    <div className='hero-img-container' ref={container}>
-      <div className='hero-img' ref={img1} style={imgStyle} />
+    <div className='carousel'>
+      <div className='hero-img-container' ref={container}>
+        <div className='hero-img' ref={img1} style={imgStyle} />
+      </div>
     </div>
   );
 }

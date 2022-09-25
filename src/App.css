@@ -5,11 +5,11 @@
 
 #App {
   --primary: white;
-  --dark: black;
+  --dark: white;
+  --tran-dur: 2s
 }
 
 * {
   font-family: AmericanType;
-  font-size: 96px;
   /* font-weight: bold; */
 }

@@ -1,0 +1,35 @@
+.hero-section {
+  background-color: var(--primary);
+  transition: background-color var(--tran-dur);
+  height: 500px;
+}
+
+.container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex
+}
+
+.title {
+  z-index: 11000;
+  color: white;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h1 {
+  font-size: 110px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  width: 550px;
+  margin-top: 0;
+}
