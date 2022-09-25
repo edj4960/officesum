@@ -1,0 +1,41 @@
+.hero-img-container {
+  width: 650px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-img {
+  height: 100%;
+  position: absolute;
+  animation-name: heroanim;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  &:nth-child(2) {
+    animation-delay: -1s;
+  }
+  &:nth-child(1) {
+    animation-delay: 8s;
+  }
+}
+
+
+@keyframes heroanim {
+  0% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
