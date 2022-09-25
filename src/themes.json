@@ -1,0 +1,22 @@
+[
+  {
+    "primary": "#DCC38D",
+    "dark": "#9C7A30",
+    "heroIdx": 1
+  },
+  {
+    "primary": "#ACB887",
+    "dark": "#6A7645",
+    "heroIdx": 2
+  },
+  {
+    "primary": "red",
+    "dark": "red",
+    "heroIdx": 3
+  },
+  {
+    "primary": "#6B7192",
+    "dark": "#2C3045",
+    "heroIdx": 4
+  }
+]

@@ -1,65 +1,32 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { shuffle } from '../util';
+import React, { useContext, useEffect, useRef, useState } from 'react';
+// import { shuffle } from '../util';
+// import themesJson from '../themes.json';
+import { ThemeContext } from '../providers/ThemeProvider';
+import hero1 from '../images/hero-1.png';
 
 import './ImageCarousel.scss';
 
-const images = shuffle([
-  require('../images/hero-1.png'),
-  require('../images/hero-2.png'),
-  require('../images/hero-3.png'),
-  require('../images/hero-4.png'),
-]);
+// const themes = shuffle(themesJson);
 
 const ImageCarousel = () => {
-  const [idx1, setIdx1] = useState(0);
-  const [idx2, setIdx2] = useState(1);
+  const container = useRef();
+  const img1 = useRef();
+  const img2 = useRef();
+  const [imgStyle, setImgStyle] = useState({});
 
-  const getNextIdx = (idx) => {
-    let nexIdx = idx + 2;
-    console.log(nexIdx);
-    if (nexIdx === images.length) {
-      return 0;
-    } else if (nexIdx > images.length) {
-      return 1;
+  const { theme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    let newStyle = {
+      backgroundImage: `url(${require(`../images/hero-${theme.heroIdx}.png`)})`
     }
-    return nexIdx;
-  }
 
-  const updateIdx = (idxId) => {
-    if (idxId === 1) {
-      setIdx1(getNextIdx(idx1));
-    } else {
-      setIdx2(getNextIdx(idx2));
-    }
-  }
-
-  useEffect(() => {
-    // Set img1 idx
-    setTimeout(() => {
-      updateIdx(2);
-    }, 22000);
-    // Set img2 idx
-    setTimeout(() => {
-      updateIdx(2);
-    }, 12000);
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => {
-      updateIdx(1);
-    }, 20000);
-  }, [idx1]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      updateIdx(2);
-    }, 20000);
-  }, [idx2]);
+    setImgStyle(newStyle);
+  }, [theme]);
 
   return (
-    <div className='hero-img-container'>
-      <img className='hero-img' src={images[idx1]} />
-      <img className='hero-img' src={images[idx2]} />
+    <div className='hero-img-container' ref={container}>
+      <div className='hero-img' ref={img1} style={imgStyle} />
     </div>
   );
 }

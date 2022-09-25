@@ -1,11 +1,14 @@
 import './App.css';
 import Hero from './components/Hero';
+import { ThemeProvider } from './providers/ThemeProvider';
 
 function App() {
   return (
-    <div className="App">
-      <Hero />
-    </div>
+    <ThemeProvider>
+      <div id="App">
+        <Hero />
+      </div>
+    </ThemeProvider>
   );
 }
 

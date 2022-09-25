@@ -3,6 +3,11 @@
   src: url(fonts/AmericanTypeMedium.otf);
 }
 
+#App {
+  --primary: white;
+  --dark: black;
+}
+
 * {
   font-family: AmericanType;
   font-size: 96px;
