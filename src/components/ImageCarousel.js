@@ -16,13 +16,15 @@ const ImageCarousel = () => {
 
   const { theme } = useContext(ThemeContext);
 
+  const image = require(`../images/hero-${theme.heroIdx}.png`);
+
   useEffect(() => {
     let newStyle = {
-      backgroundImage: `url(${require(`../images/hero-${theme.heroIdx}.png`)})`
+      backgroundImage: `url(${image})`
     }
 
     setImgStyle(newStyle);
-  }, [theme]);
+  }, [theme, image]);
 
   return (
     <div className='carousel'>

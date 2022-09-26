@@ -1,13 +1,19 @@
-import './App.css';
 import Hero from './components/Hero';
 import { ThemeProvider } from './providers/ThemeProvider';
+import { LoremProvider } from './providers/LoremProvider';
+import LoremOutput from './components/LoremOutput';
+
+import './App.scss';
 
 function App() {
   return (
     <ThemeProvider>
-      <div id="App">
-        <Hero />
-      </div>
+      <LoremProvider>
+        <div id="App">
+          <Hero />
+          <LoremOutput />
+        </div>
+      </LoremProvider>
     </ThemeProvider>
   );
 }

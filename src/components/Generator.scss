@@ -1,0 +1,30 @@
+
+.generator {
+  display: flex;
+  flex-direction: row;
+
+  > * {
+    padding: 25px 12px;
+  }
+}
+
+.description {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  background-color: var(--dark);
+  transition: background-color var(--tran-dur);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input {
+  width: 35px;
+  height: 30px;
+  padding: 0 2px;
+}

@@ -218,7 +218,7 @@
    [
       {
          "character":"Dwight",
-         "text":"It has to be official, and it <i>has</i> to be urine."
+         "text":"It has to be official, and it has to be urine."
       }
    ],
    [
@@ -1648,7 +1648,7 @@
    [
       {
          "character":"Dwight",
-         "text":"Listen up. Let's start… from the ground <i>up</i>. Where does paper come from?"
+         "text":"Listen up. Let's start… from the ground up. Where does paper come from?"
       },
       {
          "character":"Kevin",
@@ -2171,6 +2171,20 @@
       {
          "character":"Andy",
          "text":"Andy Bernard does not lose contests. He wins them… or he quits them because they are unfair."
+      }
+   ],
+   [
+      {
+         "character":"Pete",
+         "text":"I didn't realize that everybody here dresses up every year."
+      },
+      {
+         "character": "Creed",
+         "text": "Me neither."
+      },
+      {
+         "character": "Creed",
+         "text": "It's Halloween. That is really, really good timing."
       }
    ]
 ]
