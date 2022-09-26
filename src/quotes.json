@@ -2186,5 +2186,101 @@
          "character": "Creed",
          "text": "It's Halloween. That is really, really good timing."
       }
+   ],
+   [
+      {
+         "character": "Andy",
+         "text": "[to Oscar] Did you hear the rumor about me? That I'm gay?"
+      },
+      {
+         "character": "Oscar",
+         "text": "[nodding] I did. Yes."
+      },
+      {
+         "character": "Andy",
+         "text": "And?"
+      },
+      {
+         "character": "Oscar",
+         "text": "What?"
+      },
+      {
+         "character": "Andy",
+         "text": "Do you think it's true? Do you think that I'm… gay?"
+      },
+      {
+         "character": "Oscar",
+         "text": "Are you attracted to other men?"
+      },
+      {
+         "character": "Andy",
+         "text": "[scoffs and chuckles] No! But, let me kick you a scenario. I'm at a beach cabana, and Brad Pitt approaches. He tries to lean in and kiss me. I would definitely resist, like at first. But if he was persistent, [long pause] I think I might give in a little bit, just to see what it… felt like."
+      },
+      {
+         "character": "Oscar",
+         "text": "[stares at Andy incredulously]"
+      },
+      {
+         "character": "Andy",
+         "text": "Would I push him away? How hard? Like, what if he's like really aggressive?"
+      },
+      {
+         "character": "Oscar",
+         "text": "If you resisted Brad Pitt a little bit, he would still… need to get to you?"
+      },
+      {
+         "character": "Andy",
+         "text": "It's not real Brad Pitt, this is like, this is my fantasy. Or it's like, not a fantasy, it's just… it's just a scenario."
+      },
+      {
+         "character": "Oscar",
+         "text": "Wow. I wish… I wish I could help you. I don't… you might be gay. You might be gay."
+      },
+      {
+         "character": "Oscar",
+         "text": "What exactly is my responsibility here? To comfort insecure heterosexual men? That can't possibly fall to me."
+      }
+   ],
+   [
+      {
+         "character": "Angela",
+         "text": "Listen, dummy! It’s not that hard. All you have to do is take the numbers from the sales report and type them into a master spreadsheet. A G.D. monkey could do it. I do not understand why you can't do it." 
+      },
+      {
+         "character": "Holly",
+         "text": "No! You do not talk to him like that!"
+      },
+      {
+         "character": "Angela",
+         "text": "But he's an idiot!"
+      },
+      {
+         "character": "Holly",
+         "text": "He is not an idiot!"
+      },
+      {
+         "character": "Kevin",
+         "text": "Thank you, Holly."
+      },
+      {
+         "character": "Holly",
+         "text": "He is mentally challenged. But he's doing a super job here."
+      },
+      {
+         "character": "Kevin",
+         "text": "Wait, back up. Do you think that I am retarded?"
+      },
+      {
+         "character": "Holly",
+         "text": "Well, no. Dwight…"
+      },
+      {
+         "character": "Angela",
+         "text": "Oh, Holly, that is very offensive."
+      },
+      {
+         "character": "Holly",
+         "text": "I'm sorry."
+      }
    ]
 ]
