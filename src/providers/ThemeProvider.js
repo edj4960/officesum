@@ -11,22 +11,22 @@ const ThemeContext = createContext({
 const ThemeProvider = props => {
   const [themeIdx, setThemeIdx] = useState(0);
 
-  const udpateStyles = () => {
-    let newTheme = themes[themeIdx];
-    const appStyle = document.getElementById('App').style;
-    appStyle.setProperty('--primary', newTheme.primary);
-    appStyle.setProperty('--dark', newTheme.dark);
-  }
-
-  const updateTheme = () => {
-    let newIdx = themeIdx + 1;
-    if (newIdx >= themes.length) {
-      newIdx = 0;
-    }
-    setThemeIdx(newIdx);
-  }
-
   useEffect(() => {
+    const udpateStyles = () => {
+      let newTheme = themes[themeIdx];
+      const appStyle = document.getElementById('App').style;
+      appStyle.setProperty('--primary', newTheme.primary);
+      appStyle.setProperty('--dark', newTheme.dark);
+    }
+
+    const updateTheme = () => {
+      let newIdx = themeIdx + 1;
+      if (newIdx >= themes.length) {
+        newIdx = 0;
+      }
+      setThemeIdx(newIdx);
+    }
+
     udpateStyles();
     setTimeout(() => {
       updateTheme();

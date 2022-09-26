@@ -11,9 +11,10 @@ const convoToText = (convo) => {
   let output = '';
   convo.forEach(quote => {
     for (const [key, value] of Object.entries(quote)) {
-      output += value;
       if (key === 'character') {
-        output += ':';
+        output += `[${value}]:`;
+      } else {
+        output += value;
       }
       output += ' ';
     }

@@ -25,7 +25,7 @@ const Generator = () => {
         <input
           type="number"
           max={max}
-          min={2}
+          min={min}
           value={paragraphs}
           onChange={updateParagraphs}
         ></input>
