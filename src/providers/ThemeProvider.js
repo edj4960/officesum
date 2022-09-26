@@ -13,7 +13,6 @@ const ThemeProvider = props => {
 
   const udpateStyles = () => {
     let newTheme = themes[themeIdx];
-    // console.log('updating styles', newTheme);
     const appStyle = document.getElementById('App').style;
     appStyle.setProperty('--primary', newTheme.primary);
     appStyle.setProperty('--dark', newTheme.dark);
@@ -24,7 +23,6 @@ const ThemeProvider = props => {
     if (newIdx >= themes.length) {
       newIdx = 0;
     }
-    // console.log(newIdx);
     setThemeIdx(newIdx);
   }
 
