@@ -1,7 +1,8 @@
 .hero-section {
   background-color: var(--primary);
-  transition: background-color var(--tran-dur);
+  transition: background-color var(--tran-dur), box-shadow var(--tran-dur);
   height: 500px;
+  box-shadow: inset 0px 15px 30px var(--dark);
 
   .container {
     display: flex
