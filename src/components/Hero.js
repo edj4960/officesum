@@ -9,6 +9,14 @@ const Hero = () => {
   return (
     <div className='hero-section'>
       <div className='container'>
+        <a
+          className='link'
+          href='https://github.com/edj4960/officesum'
+          target='_blank'
+          rel="noreferrer"
+        >
+          view the repo
+        </a>
         <ImageCarousel />
         <div className='title'>
           <h1>officesum</h1>

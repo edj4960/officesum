@@ -3,14 +3,28 @@
   transition: background-color var(--tran-dur), box-shadow var(--tran-dur);
   height: 500px;
   box-shadow: inset 0px 15px 30px var(--dark);
+  height: 36rem;
 
   .container {
     display: flex
   }
+
+  .link {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    color: white;
+    z-index: 20;
+    text-decoration: none;
+    transition: color .2s;
+    &:hover {
+      color: var(--dark);
+    }
+  }
 }
 
 .title {
-  z-index: 11000;
+  z-index: 10;
   color: white;
   text-align: right;
   display: flex;
@@ -20,7 +34,7 @@
 
 h1 {
   font-size: 110px;
-  margin-top: 100px;
+  margin-top: 220px;
   margin-bottom: 0px;
 }
 

@@ -2,6 +2,7 @@
 .generator {
   display: flex;
   flex-direction: row;
+  box-shadow: 0 23px 50px -13px rgb(0 0 0 / 30%);
 
   > * {
     padding: 25px 12px;
