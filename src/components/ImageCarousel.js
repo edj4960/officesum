@@ -1,35 +1,57 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-// import { shuffle } from '../util';
-// import themesJson from '../themes.json';
 import { ThemeContext } from '../providers/ThemeProvider';
-import hero1 from '../images/hero-1.png';
 
 import './ImageCarousel.scss';
 
-// const themes = shuffle(themesJson);
+let images = [];
+const imagesLength = 10
+
+for (let i = 1; i <= imagesLength; i++) {
+  images.push(require(`../images/hero-${i}.png`));
+}
 
 const ImageCarousel = () => {
   const container = useRef();
   const img1 = useRef();
   const img2 = useRef();
-  const [imgStyle, setImgStyle] = useState({});
+  const [imgIdx1, setImgIdx1] = useState(null);
+  const [imgIdx2, setImgIdx2] = useState(null);
 
   const { theme } = useContext(ThemeContext);
-
-  const image = require(`../images/hero-${theme.heroIdx}.png`);
+  
+  const switchImg = (toHide, toShow) => {
+    setTimeout(() => {
+      toShow.current.classList.remove('hidden');
+      toHide.current.classList.add('hidden');
+    }, 0);
+  }
 
   useEffect(() => {
-    let newStyle = {
-      backgroundImage: `url(${image})`
+    let idx = theme.heroIdx - 1;
+    if (img1.current.classList.contains("hidden")) {
+      setImgIdx1(idx);
+      switchImg(img2, img1);
+    } else {
+      setImgIdx2(idx);
+      switchImg(img1, img2);
     }
-
-    setImgStyle(newStyle);
-  }, [theme, image]);
+  }, [theme]);
 
   return (
     <div className='carousel'>
       <div className='hero-img-container' ref={container}>
-        <div className='hero-img' ref={img1} style={imgStyle} />
+        <img
+          className='hero-img img-delay'
+          src={imgIdx1 !== null ? images[imgIdx1] : ''}
+          ref={img1}
+          alt="the office"
+        />
+        <img
+          className='hero-img hidden'
+          src={imgIdx2 !== null ? images[imgIdx2] : ''}
+          ref={img2}
+          alt="the office"
+        />
       </div>
     </div>
   );
