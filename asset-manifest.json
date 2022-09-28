@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/officesum/static/css/main.058759d2.css",
+    "main.js": "/officesum/static/js/main.82e7227f.js",
+    "static/js/787.4235adfa.chunk.js": "/officesum/static/js/787.4235adfa.chunk.js",
+    "static/media/hero-8.png": "/officesum/static/media/hero-8.364bab296d9cf91888a0.png",
+    "static/media/hero-6.png": "/officesum/static/media/hero-6.541e8e3a129973215820.png",
+    "static/media/hero-4.png": "/officesum/static/media/hero-4.81212b1acf43546add5a.png",
+    "static/media/hero-10.png": "/officesum/static/media/hero-10.59565dbf8d5e24318f4a.png",
+    "static/media/hero-9.png": "/officesum/static/media/hero-9.a8808975ee5801b3f414.png",
+    "static/media/hero-3.png": "/officesum/static/media/hero-3.e20aceb0dc03f9b0cc17.png",
+    "static/media/hero-7.png": "/officesum/static/media/hero-7.58ce53b21e67556e092e.png",
+    "static/media/hero-1.png": "/officesum/static/media/hero-1.9059c87d6dc9fd68b270.png",
+    "static/media/hero-2.png": "/officesum/static/media/hero-2.d8e7da7ae858b2a8160c.png",
+    "static/media/hero-5.png": "/officesum/static/media/hero-5.2f18b0079f413938dfb4.png",
+    "static/media/AmericanTypeMedium.otf": "/officesum/static/media/AmericanTypeMedium.59e3d33b83f0e012ec9e.otf",
+    "index.html": "/officesum/index.html",
+    "main.058759d2.css.map": "/officesum/static/css/main.058759d2.css.map",
+    "main.82e7227f.js.map": "/officesum/static/js/main.82e7227f.js.map",
+    "787.4235adfa.chunk.js.map": "/officesum/static/js/787.4235adfa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.058759d2.css",
+    "static/js/main.82e7227f.js"
+  ]
+}
