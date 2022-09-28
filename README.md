@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a placeholder text generator the utilizes commedic quotes from the show 'The Office'. This is a for fun project and was made using React.js and SASS.
+This is a placeholder text generator that utilizes commedic quotes from the show 'The Office'. This is a for fun project and was made using React.js and SASS.
 
 The app utilizes React context providers to handle delegating timed themed changes and the generating and displaying of randomized quotes.
 
